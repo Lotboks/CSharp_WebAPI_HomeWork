@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <style>
+        body {
+            background-color: #3e3e3e;
+        }
+
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #0984e3;
+            width: 25%;
+            border-radius: 6px;
+            margin: auto;
+            height: 90vh;
+        }
+
+        .get-user-btn {
+            background-color: #e1b12c;
+            border: none;
+            border-radius: 6px;
+            padding: 5px 10px;
+            transition: 0.4s;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+
+            .get-user-btn:hover {
+                background-color: #fbc531;        
+            }
+    </style>
+</head>
+<body>
+
+<div class="div-container">
+
+    <h2>All Usernames</h2>
+    <ul id="allUsernames"></ul>
+
+    <h2>Get User by Index</h2>
+    <label for="indexInput">Enter Index: </label>
+    <input type="number" id="indexInput">
+    <button id="getUserButton" class="get-user-btn">Get User</button>
+    <p id="userDetails"></p>
+
+</div>
+
+    <script src="/js/site.js"></script>
+</body>
+</html>
